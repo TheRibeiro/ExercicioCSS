@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal de Cursos</title>
+        <!-- <link rel="stylesheet" href="css/styles.css"> -->
+        <style>
+           
+            /* note que os "netos também sofreram mudança, gracas ao efeito cascata" */
+            /* todo p da classe promoção, descendente de elemento com id principal */
+            #principal p.promocao {
+                padding: 20px;
+                background-color: aliceblue;
+            }
+            body #principal article section p.cordenadores, p.curso, p.novo-curso {
+                text-align: center;
+            }
+            /* Paragrafos filhos-diretos article */
+            article p {
+                padding: 12px;
+                background-color: aliceblue;
+            }
+            article>p {
+                padding: 12px;
+               
+            }
+        </style>
+    </head>
+    <body>
+        <main id="principal">
+            <h1 id="titulo">Portal de Cursos</h1>
+            <p id="descricao">Temos cursos nas mais diversas áreas.</p>
+            <p class="promocao">Venha nos visitar, conheça nossas ofertas de
+                <strong>bolsas de estudo</strong>.</p>
+
+            <p class="curso"> <Strong>Cursos</Strong> </p>
+            <article>
+                <p class="novo-curso">Ciências de Computação</p>
+                <p class="curso">Engenharia de Computação</p>
+                <p class="curso">Administração</p>
+                <section>
+                    <p class="cordenadores">Nossos cordenadores estão á disposição.</p>
+                </section>
+            </article>
+
+            <!-- Parágrafo só com classe -->
+            <p id="contato" class="final-pagina">Entre em contato: 22.01552-3</p>
+            <!-- Parágrafo com id e classe -->
+            <p id="rodape" class="final-pagina">&copy;
+                <strong>Todos os direitos reservados</strong>
+            </p>
+        </main>
+    </body>
+</html>

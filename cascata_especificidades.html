@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Cascata e especificidades</title>
+        <link rel="stylesheet" href="css/cascata_especificidades.css">
+        <style>
+
+            #titulo {
+                color: red;
+            }
+            .descricao {
+                color: green;
+            }
+            /*  tipo = 001 */
+            p {
+                color: blue;
+            }
+            /* Classe = 10 + tipo = 1 = 11 */
+            .principal article {
+                background-color: aqua;
+            }
+            /* tipo + tipo article = 2 */
+            main article {
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+
+        <main class="principal">
+            <article>
+                <p id="titulo" class="descricao">
+                    Algoritimos de especificidades
+               </p>
+
+            </article>
+        </main>
+    </body>
+</html>
